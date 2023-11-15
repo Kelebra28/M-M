@@ -1,17 +1,18 @@
 .header-container {
-    width: 25rem;
+    width: 35rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .icon-container {
-    // border: 2px solid;
+    color: red;
+    transform: rotate(45deg);
 }
 
 .red-bar{
     display: inline-block;
     border: 2px solid red;
-    width: 10rem;
+    width: 20rem;
     height: 0px;
 }
