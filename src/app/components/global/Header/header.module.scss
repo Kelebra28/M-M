@@ -1,0 +1,17 @@
+.header-container {
+    width: 25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-container {
+    // border: 2px solid;
+}
+
+.red-bar{
+    display: inline-block;
+    border: 2px solid red;
+    width: 10rem;
+    height: 0px;
+}

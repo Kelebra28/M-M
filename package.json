@@ -14,8 +14,11 @@
     "@mui/icons-material": "^5.14.13",
     "@mui/material": "^5.14.13",
     "next": "latest",
+    "postcss-import": "^15.1.0",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "sass": "^1.68.0",
+    "scss": "^0.2.4"
   },
   "devDependencies": {
     "@types/node": "latest",
