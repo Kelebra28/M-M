@@ -1,0 +1,31 @@
+.primise-container {
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+    background-image: url('/icons/promise.svg');
+    background-position: 40% center; 
+    background-repeat: no-repeat;
+}
+.primise-info {
+    width: 50%;
+    margin-left: 4rem;
+    p {
+        width: 20rem;
+        margin-left: 2.5rem;
+    }
+}
+
+.primise-img {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.red-bar {
+    width: 20rem;
+    height: 0.5rem;
+    background-color: red;
+}

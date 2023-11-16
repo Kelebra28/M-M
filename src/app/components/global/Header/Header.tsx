@@ -13,7 +13,7 @@ export const Header = ({ title, square }: HeaderProps) => {
            { square && <div className={styles['icon-container']}>
                 <SquareIcon />
             </div>}
-            <h2>{title}</h2>
+            <h2 className={square ? styles.title : undefined}>{title}</h2>
             <div>
                 <span className={styles['red-bar']}></span>
             </div>

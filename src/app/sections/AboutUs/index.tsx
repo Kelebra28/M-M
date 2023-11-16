@@ -19,8 +19,8 @@ export default function AboutUs() {
                     </div>
                 </div>
                 <div className="z-0 flex justify-center h-[350px] md:h-[450px] lg:h-full lg:pr-2 ">
-                    <div className="z-0 bg-red-600 overflow-hidden h-4 w-[400px] absolute -top-2 -right-32"></div>
-                    <div className="flex overflow-hidden absolute items-center justify-center pl-6 -right-4 lg:bottom-0 lg:top-0 md:-right-0 lg:-right-8 xl:-right-32  lg:justify-end">
+                    <div className="z-0 bg-red-600 overflow-hidden h-4 w-[400px] absolute -top-2 -right-20"></div>
+                    <div className="flex overflow-hidden absolute items-center justify-center pl-6 -right-4 lg:bottom-0 lg:top-0 md:-right-0 lg:-right-8 xl:-right-20  lg:justify-end">
                         <Image
                             alt=''
                             src='/sections/AboutUs.jpg'

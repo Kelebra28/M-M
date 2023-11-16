@@ -32,7 +32,7 @@ const Services = () => {
 }, [activeItem]);
 
   return (
-    <div className={styles["services-container"]}>
+    <div id="services" className={styles["services-container"]}>
       <div>
         <Header title="Servicios" square />
       </div>
