@@ -1,7 +1,6 @@
 .header-container {
-    width: 35rem;
+    width: 40rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -15,4 +14,9 @@
     border: 2px solid red;
     width: 20rem;
     height: 0px;
+    margin-left: 1rem;
+}
+
+.title {
+    margin-left: 1rem;
 }

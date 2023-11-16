@@ -1,0 +1,51 @@
+.max-time-container {
+    height: 60vh;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.img-container {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.info-container {
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.icon {
+    margin-left: 15rem;
+}
+
+.back-blocks {
+    width: 40rem;
+    height: 28rem;
+    z-index: -1;
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5rem;
+}
+
+.red {
+    width: 1rem;
+    height: 20rem;
+    background-color: red;
+    z-index: -2;
+}
+
+.gray {
+    width: 20rem;
+    height: 25rem;
+    background-color: #F1F6F7;
+    z-index: -2;
+}
