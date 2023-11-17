@@ -8,25 +8,23 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+
+import styles from './carruse.module.scss';
 
 const steps = [
   {
-    label: 'Select campaign settings',
-    description: `For each ad campaign that you create, you can control how much
-              you're willing to spend on clicks and conversions, which networks
-              and geographical locations you want your ads to show on, and more.`,
+    label: 'Ricardo Basurto',
+    description: `lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
   },
   {
-    label: 'Create an ad group',
+    label: 'Eiichi Matsuo',
     description:
-      'An ad group contains one or more ads which target a shared set of keywords.',
+      'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
   {
-    label: 'Create an ad',
-    description: `Try out different ad text to see what brings in the most customers,
-              and learn how to enhance your ads using features like ad extensions.
-              If you run into any problems with your ads, find out how to tell if
-              they're running and how to resolve approval issues.`,
+    label: 'Abraham Contreras',
+    description: `lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
   },
 ];
 
@@ -44,7 +42,7 @@ const CarruselTestimonial =() => {
   };
 
   return (
-    <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
+    <Box sx={{ maxWidth: 600, flexGrow: 1}}>
       <Paper
         square
         elevation={0}
@@ -56,10 +54,16 @@ const CarruselTestimonial =() => {
           bgcolor: '#F7F7F7',
         }}
       >
-        <Typography>{steps[activeStep].label}</Typography>
+        <Typography variant="h3">Testimonios</Typography>
       </Paper>
-      <Box sx={{ height: 255, maxWidth: 400, width: '100%', p: 2 }}>
-        {steps[activeStep].description}
+      <Box sx={{ height: 255, maxWidth: 600, width: '100%', p: 7 }}>
+        <div>
+          <p>{steps[activeStep].description}</p>
+        <div className='flex justify-around items-center mt-[2rem]'>
+          <div><AccountCircleIcon style={{fontSize: '5rem'}}/></div>
+          <Typography fontWeight={900}  className={styles.name} variant="h5">{steps[activeStep].label}</Typography>
+        </div>
+        </div>
       </Box>
       <MobileStepper
       sx={{bgcolor: '#F7F7F7'}}
@@ -74,18 +78,18 @@ const CarruselTestimonial =() => {
             disabled={activeStep === maxSteps - 1}
           >
             {theme.direction === 'rtl' ? (
-              <KeyboardArrowLeft />
+              <KeyboardArrowLeft color='error' />
             ) : (
-              <KeyboardArrowRight />
+              <KeyboardArrowRight color='error' />
             )}
           </Button>
         }
         backButton={
           <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
             {theme.direction === 'rtl' ? (
-              <KeyboardArrowRight />
+              <KeyboardArrowRight  color='error' />
             ) : (
-              <KeyboardArrowLeft />
+              <KeyboardArrowLeft   color='error'/>
             )}
           </Button>
         }

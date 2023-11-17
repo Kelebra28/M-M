@@ -7,6 +7,7 @@ import Testimonials from './sections/Testimonials/Testimonials';
 import Promise from './sections/Promise/Promise';
 import Footer from './components/global/Footer/Footer';
 import WhatsApp from './components/global/WhatsApp/WhatsApp';
+import GoogleMaps from './sections/GoogleMaps/GoogleMaps';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Services />
       <Testimonials />
       <Promise />
+      <GoogleMaps />
       <Footer />
       <WhatsApp />
     </main>
