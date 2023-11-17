@@ -12,6 +12,8 @@ import Footer from './components/global/Footer/Footer';
 import WhatsApp from './components/global/WhatsApp/WhatsApp';
 import GoogleMaps from './sections/GoogleMaps/GoogleMaps';
 import EmailPopUp from './components/global/ContactEmail/ContactEmail';
+import Header from './sections/Header';
+import Navbar from './components/global/Navbar'
 
 export default function Home() {
   const [contactPopUp, setContactPopUp] = useState<boolean>(false);
@@ -21,6 +23,8 @@ export default function Home() {
   return (
     <main className="">
       { contactPopUp ? <EmailPopUp handleContactPopUp={handleContactPopUp} /> : null }
+      <Navbar handleContactPopUp={handleContactPopUp}/>
+      <Header/>
       <AboutUs />
       <OurCompromise />
       <MaxTime />
