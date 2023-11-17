@@ -15,16 +15,16 @@ import styles from './carruse.module.scss';
 const steps = [
   {
     label: 'Ricardo Basurto',
-    description: `lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
+    description: `lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
   },
   {
     label: 'Eiichi Matsuo',
     description:
-      'lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      'lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
   {
     label: 'Abraham Contreras',
-    description: `lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
+    description: `lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.lorem ipsum dolor sit amet, consectetur adipiscing elit.`,
   },
 ];
 

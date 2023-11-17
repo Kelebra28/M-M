@@ -15,9 +15,9 @@ import EmailPopUp from './components/global/ContactEmail/ContactEmail';
 
 export default function Home() {
   const [contactPopUp, setContactPopUp] = useState<boolean>(false);
-const handleContactPopUp = () => {
-    setContactPopUp(!contactPopUp);
-  }
+  const handleContactPopUp = () => {
+      setContactPopUp(!contactPopUp);
+    }
   return (
     <main className="">
       { contactPopUp ? <EmailPopUp handleContactPopUp={handleContactPopUp} /> : null }

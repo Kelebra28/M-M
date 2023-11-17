@@ -8,7 +8,6 @@ type FooterProps = {
 };
 
 const Footer = ({handleContactPopUp}: FooterProps) => {
-    console.log(handleContactPopUp);
     return(
         <div className={styles['footer-container']}>
             <div className={styles['footer-dev']}>
