@@ -59,6 +59,43 @@
     background-color: #ff4500;
     transform-origin: left;
   }
+
+
+  button {
+    color: white;
+    font-size: larger;
+    transition: color 1s ease, border-color 1s ease;
+  }
+  button::before,
+  button::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    transition: width 0.3s ease;
+  }
+
+  button:hover {
+    color: #ff4500;
+  }
+
+  button:hover::before,
+  button:hover::after {
+    width: 50%; 
+  }
+
+  button::before {
+    left: 50%;
+    background-color: #ff4500;
+    transform-origin: right;
+  }
+
+  button::after {
+    right: 50%;
+    background-color: #ff4500;
+    transform-origin: left;
+  }
 }
 
 .logo-footer {

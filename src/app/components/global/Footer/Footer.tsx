@@ -3,7 +3,12 @@ import Link from "next/link";
 
 import styles from './footer.module.scss';
 
-const Footer = () => {
+type FooterProps = {
+    handleContactPopUp: () => void;
+};
+
+const Footer = ({handleContactPopUp}: FooterProps) => {
+    console.log(handleContactPopUp);
     return(
         <div className={styles['footer-container']}>
             <div className={styles['footer-dev']}>
@@ -19,7 +24,7 @@ const Footer = () => {
                 <div className={styles['footer-links']}>
                     <Link href="/">Inicio</Link>
                     <Link href="#services">Servicios</Link>
-                    <Link href="#services">Contancto</Link>
+                    <button onClick={() => handleContactPopUp()}>Contancto</button>
                 </div>
             </div>
             <div className={styles['logo-footer']}>
